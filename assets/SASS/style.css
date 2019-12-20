@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css?family=Abril+Fatface|Arapey:400,400i|Cinzel:400,700,900|Comfortaa:300,400,500,600,700&display=swap&subset=latin-ext");
+header #headerReklam::before, header #headerReklam::after {
+  content: "";
+  opacity: 0.2;
+  top: 0;
+  width: 2px;
+  height: 100%;
+  -webkit-box-shadow: 2px 2px 30px 10px #e0e0e0;
+          box-shadow: 2px 2px 30px 10px #e0e0e0;
+  position: absolute;
+  background-color: #e0e0e0;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes headerReklamLeft {
+  from {
+    left: 0;
+    opacity: 0;
+  }
+  to {
+    left: 100%;
+    opacity: 0.5;
+  }
+}
+
+@keyframes headerReklamLeft {
+  from {
+    left: 0;
+    opacity: 0;
+  }
+  to {
+    left: 100%;
+    opacity: 0.5;
+  }
+}
+
+@-webkit-keyframes headerReklamRight {
+  from {
+    left: 100%;
+    opacity: 0;
+  }
+  to {
+    left: 0;
+    opacity: 0.5;
+  }
+}
+
+@keyframes headerReklamRight {
+  from {
+    left: 100%;
+    opacity: 0;
+  }
+  to {
+    left: 0;
+    opacity: 0.5;
+  }
+}
+
+header {
+  text-align: center;
+}
+
+header #headerReklam {
+  background-color: #24609e;
+  color: #e0e0e0;
+  width: 100%;
+  padding: 15px 0;
+  font-family: "Comfortaa", cursive;
+  position: relative;
+}
+
+header #headerReklam::before {
+  left: 0;
+  -webkit-animation-name: headerReklamLeft;
+          animation-name: headerReklamLeft;
+}
+
+header #headerReklam::after {
+  right: 100%;
+  -webkit-animation-name: headerReklamRight;
+          animation-name: headerReklamRight;
+}
+
+header #headerReklam a {
+  text-decoration: underline;
+  margin: 0 10px;
+  font-weight: bold;
+}
+
+header #headerReklam a:hover {
+  text-decoration: underline !important;
+}
+
+a {
+  color: #e0e0e0 !important;
+}
+
+a:hover {
+  text-decoration: none !important;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,32 @@
+// Header
+    header{
+        text-align: center;
+        
+        // Reklam
+        #headerReklam{
+            background-color: $blue-color;
+            color: $light-color;
+            width: 100%;
+            padding: 15px 0;
+            font-family: $modern-writing;
+            position: relative;
+            &::before{
+                left: 0;
+                animation-name: headerReklamLeft;
+                @extend %animation-reklam-temp;
+            }
+            &::after{
+                right: 100%;
+                animation-name: headerReklamRight;
+                @extend %animation-reklam-temp;
+            }
+            a{
+                text-decoration: underline;
+                margin: 0 10px;
+                font-weight: bold;
+                &:hover{
+                    text-decoration: underline !important;
+                }
+            }
+        }
+    }

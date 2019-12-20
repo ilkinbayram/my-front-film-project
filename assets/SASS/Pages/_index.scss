@@ -1,0 +1,7 @@
+// Global Style
+a{
+    color: $light-color !important;
+    &:hover{
+        text-decoration: none !important;
+    }
+}

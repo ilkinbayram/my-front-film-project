@@ -1,0 +1,16 @@
+// extend % ile miras verilecek css yazilir / @extend ile artirilir
+
+// Header
+    // Reklam
+    %animation-reklam-temp{
+        content: "";
+        opacity: 0.2;
+        top: 0;
+        width: 2px;
+        height: 100%;
+        box-shadow: 2px 2px 30px 10px $light-color;
+        position: absolute;
+        background-color: $light-color;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+    }

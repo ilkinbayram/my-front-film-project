@@ -1,0 +1,24 @@
+// Header Animations'
+    // Reklam
+    @keyframes headerReklamLeft {
+        from {
+            left: 0;
+            opacity: 0;
+            
+        }
+        to {
+            left: 100%;
+            opacity: 0.5;
+        }
+    }
+    @keyframes headerReklamRight {
+        from {
+            left: 100%;
+            opacity: 0;
+        }
+        to {
+            left: 0;
+            opacity: 0.5;
+        }
+    }
+///////////////////////////////////////////////

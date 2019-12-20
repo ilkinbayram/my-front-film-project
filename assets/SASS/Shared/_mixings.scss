@@ -1,0 +1,12 @@
+// Mixins     @mixin    ile yazilir ve    @include    ile artirilir
+@mixin transform($propertyTransform) {
+    -webkit-transform: $propertyTransform;
+    -ms-transform: $propertyTransform;
+    transform: $propertyTransform;
+}
+
+@mixin transform($propertyTransition) {
+    -webkit-transition: $propertyTransition;
+    -ms-transition: $propertyTransition;
+    transition: $propertyTransition;
+}
