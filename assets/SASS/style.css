@@ -15,6 +15,150 @@ header #headerReklam::before, header #headerReklam::after {
           animation-iteration-count: infinite;
 }
 
+.signInBtn, .signUpBtn {
+  margin: 5px 0;
+  color: #bababa !important;
+  position: relative;
+  overflow: hidden;
+}
+
+.signInBtn:hover, .signUpBtn:hover {
+  -webkit-box-shadow: -0.4px -0.4px 5px 0.3px grey;
+          box-shadow: -0.4px -0.4px 5px 0.3px grey;
+  color: white !important;
+  -webkit-transition: all 0.2s !important;
+  transition: all 0.2s !important;
+}
+
+.signInBtn:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100px;
+  width: 20px;
+  height: 100%;
+  background-color: white;
+  opacity: 0.7;
+  -webkit-transform: skewX(-45deg);
+  transform: skewX(-45deg);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.signInBtn:hover {
+  background-color: #ba001b !important;
+}
+
+.signInBtn:hover::before {
+  left: 200px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.signUpBtn:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100px;
+  background-color: white;
+  z-index: 1;
+  width: 100px;
+  height: 100%;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.signUpBtn:hover {
+  color: #2d2d30 !important;
+  -webkit-transition: all 0.5s !important;
+  transition: all 0.5s !important;
+}
+
+.signUpBtn:hover::before {
+  left: 0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.signInBtn {
+  background-color: #ce001e !important;
+}
+
+.signUpBtn {
+  color: #efefef !important;
+  background-color: #cf9900 !important;
+}
+
+.signUpBtn span {
+  z-index: 99 !important;
+  position: relative;
+}
+
+.justSocials {
+  background-color: #39393d;
+  text-align: center;
+  border-radius: 15px;
+}
+
+.justSocials a:nth-child(1) {
+  color: #3d5a96 !important;
+}
+
+.justSocials a:nth-child(1):hover {
+  color: #5274b9 !important;
+}
+
+.justSocials a:nth-child(2) {
+  color: #0c85d0 !important;
+}
+
+.justSocials a:nth-child(2):hover {
+  color: #4db5f5 !important;
+}
+
+.justSocials a:nth-child(3) {
+  color: #d62516 !important;
+}
+
+.justSocials a:nth-child(3):hover {
+  color: #ef6e63 !important;
+}
+
+.justSocials a:nth-child(4) {
+  color: #cc0000 !important;
+}
+
+.justSocials a:nth-child(4):hover {
+  color: #ff3333 !important;
+}
+
+.justSocials a:nth-child(5) {
+  position: relative;
+  color: #c7c7c7 !important;
+  z-index: 2;
+}
+
+.justSocials a:nth-child(5):hover {
+  color: #fafafa !important;
+}
+
+.justSocials a:nth-child(5):before {
+  content: "";
+  z-index: -1;
+  border-radius: 5px;
+  position: absolute;
+  top: 5px;
+  left: 0px;
+  height: 70%;
+  width: 15px;
+  background: #8A2387;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#F27121), color-stop(#E94057), to(#8A2387));
+  background: linear-gradient(to right, #F27121, #E94057, #8A2387);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
 @-webkit-keyframes headerReklamLeft {
   from {
     left: 0;
@@ -92,6 +236,47 @@ header #headerReklam a {
 
 header #headerReklam a:hover {
   text-decoration: underline !important;
+}
+
+header #headerReklam a span {
+  opacity: 0.5;
+}
+
+header #headerReklam a span:hover {
+  opacity: 1;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+header #headerSocial {
+  background-color: #2d2d30;
+}
+
+header #headerSocial a:hover {
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
+}
+
+header #headerSocial #headerMailPhone a:hover {
+  color: #ffbd03 !important;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+header #headerSocial .row section:first-child {
+  margin: 20px 0;
+}
+
+header #headerSocial .row section:first-child a {
+  margin: 0 10px;
+}
+
+header #headerSocial .row section:last-child section:first-child {
+  font-size: 1.2em;
+}
+
+header #headerSocial #headerSignPart {
+  margin: 10px 0;
 }
 
 a {

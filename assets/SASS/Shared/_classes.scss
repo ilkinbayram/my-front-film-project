@@ -1,0 +1,56 @@
+// Btn Sign in Out
+.signInBtn{
+    background-color: $red-color !important;
+    @extend %signBtns;
+    @extend %signInBtns;
+}
+.signUpBtn{
+    color: lighten($color: $light-color, $amount: 6) !important;
+    background-color: darken($color: $warning-color, $amount: 10) !important;
+    @extend %signBtns;
+    @extend %signUpBtns;
+    span{
+        z-index: 99 !important;
+        position: relative;
+    }
+}
+.justSocials{
+    background-color: lighten($color: $dark-color, $amount: 5);
+    text-align: center;
+    border-radius: 15px;
+    a:nth-child(1){
+        color: darken($color: #3e5c9a , $amount: 1) !important;
+        @include lighten(#3e5c9a);
+    }
+    a:nth-child(2){
+        color: darken($color: #1da1f2 , $amount: 10) !important;
+        @include lighten(#1da1f2);
+    }
+    a:nth-child(3){
+        color: darken($color: #ea4335 , $amount: 10) !important;
+        @include lighten(#ea4335);
+    }
+    a:nth-child(4){
+        color: darken($color: #ff0000 , $amount: 10) !important;
+        @include lighten(#ff0000);
+    }
+    a:nth-child(5){
+        position: relative;
+        color: darken($color: $light-color , $amount: 10) !important;
+        @include lighten($light-color);
+        z-index: 2;
+        &:before{
+            content: "";
+            z-index: -1;
+            border-radius: 5px;
+            position: absolute;
+            top: 5px;
+            left:0px;
+            height: 70%;
+            width: 15px;
+            background: #8A2387;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #F27121, #E94057, #8A2387);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #F27121, #E94057, #8A2387); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        }
+    }
+}

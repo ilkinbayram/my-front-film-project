@@ -5,8 +5,13 @@
     transform: $propertyTransform;
 }
 
-@mixin transform($propertyTransition) {
+@mixin transition($propertyTransition) {
     -webkit-transition: $propertyTransition;
     -ms-transition: $propertyTransition;
     transition: $propertyTransition;
+}
+@mixin lighten($colorProperty){
+    &:hover{
+        color: lighten($color: $colorProperty , $amount: 10) !important;
+    }
 }

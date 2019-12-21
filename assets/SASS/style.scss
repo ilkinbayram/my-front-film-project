@@ -1,8 +1,10 @@
 @import './Shared/variables';
+@import './Shared/fonts';
 @import './Shared/mixings';
 @import './Shared/extend';
-@import './Shared/fonts';
+@import './Shared/classes';
 @import './Shared/keyFrames';
+@import './Shared/mediaQuery';
 
 @import './Pages/header';
 @import './Pages/footer';
