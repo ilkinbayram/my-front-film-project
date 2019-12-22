@@ -22,8 +22,9 @@
         color: darken($color: $light-color, $amount: 15) !important;
         position: relative;
         overflow: hidden;
+        box-shadow: darken($color: $hard-color, $amount: 2) 1px 1px 1px 0.1px !important;
         &:hover{
-            box-shadow: -0.4px -0.4px 5px 0.3px grey;
+            box-shadow: -0.4px -0.4px 5px 0.3px grey !important;
             color: white !important;
             transition: all 0.2s !important;
         }

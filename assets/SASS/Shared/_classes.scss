@@ -54,3 +54,15 @@
         }
     }
 }
+// Header Navbar
+    // NavMenu'nu saga ceken klass
+    .rightPost{
+        margin-left: auto !important;
+    }
+    // Menu Item Aktiv Version
+    .activeNavItem{
+        color: lighten($color: $light-color, $amount: 3) !important;
+        border-radius: 4px;
+        padding: 0 5px;
+        background-color: darken($color: $red-color, $amount: 2) !important;
+    }

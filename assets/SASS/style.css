@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Abril+Fatface|Arapey:400,400i|Cinzel:400,700,900|Comfortaa:300,400,500,600,700&display=swap&subset=latin-ext");
+@import url("https://fonts.googleapis.com/css?family=Righteous&display=swap");
 header #headerReklam::before, header #headerReklam::after {
   content: "";
   opacity: 0.2;
@@ -20,11 +21,13 @@ header #headerReklam::before, header #headerReklam::after {
   color: #bababa !important;
   position: relative;
   overflow: hidden;
+  -webkit-box-shadow: #111111 1px 1px 1px 0.1px !important;
+          box-shadow: #111111 1px 1px 1px 0.1px !important;
 }
 
 .signInBtn:hover, .signUpBtn:hover {
-  -webkit-box-shadow: -0.4px -0.4px 5px 0.3px grey;
-          box-shadow: -0.4px -0.4px 5px 0.3px grey;
+  -webkit-box-shadow: -0.4px -0.4px 5px 0.3px grey !important;
+          box-shadow: -0.4px -0.4px 5px 0.3px grey !important;
   color: white !important;
   -webkit-transition: all 0.2s !important;
   transition: all 0.2s !important;
@@ -159,6 +162,17 @@ header #headerReklam::before, header #headerReklam::after {
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
+.rightPost {
+  margin-left: auto !important;
+}
+
+.activeNavItem {
+  color: #e8e8e8 !important;
+  border-radius: 4px;
+  padding: 0 5px;
+  background-color: #c4001d !important;
+}
+
 @-webkit-keyframes headerReklamLeft {
   from {
     left: 0;
@@ -257,6 +271,11 @@ header #headerSocial a:hover {
   transition: all 0.6s;
 }
 
+header #headerSocial #headerMailPhone {
+  width: 100%;
+  font-family: "Comfortaa", cursive;
+}
+
 header #headerSocial #headerMailPhone a:hover {
   color: #ffbd03 !important;
   -webkit-transition: all 0.5s;
@@ -268,7 +287,7 @@ header #headerSocial .row section:first-child {
 }
 
 header #headerSocial .row section:first-child a {
-  margin: 0 10px;
+  margin: 0 1%;
 }
 
 header #headerSocial .row section:last-child section:first-child {
@@ -277,6 +296,50 @@ header #headerSocial .row section:last-child section:first-child {
 
 header #headerSocial #headerSignPart {
   margin: 10px 0;
+}
+
+header #headerNavbar {
+  background-color: #9b0017;
+}
+
+header #headerNavbar img {
+  height: 70px;
+  margin-top: 10px;
+}
+
+header #headerNavbar div div:nth-child(2) {
+  margin-top: 5px;
+  font-family: "Righteous", cursive;
+  text-shadow: #2d2d30 1px 1px 2px;
+}
+
+header #headerNavbar div .dropdown-menu {
+  background-color: #46464a !important;
+}
+
+header #headerNavbar div .dropdown-menu a {
+  color: #949494 !important;
+  background-color: #46464a !important;
+}
+
+header #headerNavbar div .dropdown-menu a:hover {
+  color: #e0e0e0 !important;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+header #headerNavbar .nav-link {
+  color: #adadad !important;
+}
+
+header #headerNavbar .nav-link:hover {
+  color: #e8e8e8 !important;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+header #headerNavbar .nav-link .fa-search {
+  margin-left: 5px;
 }
 
 a {
