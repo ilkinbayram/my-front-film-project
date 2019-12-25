@@ -187,44 +187,44 @@ header #headerReklam::before, header #headerReklam::after {
 
 @-webkit-keyframes headerReklamLeft {
   from {
-    left: 0;
+    left: 1px;
     opacity: 0;
   }
   to {
-    left: 99.9%;
+    left: 99%;
     opacity: 0.5;
   }
 }
 
 @keyframes headerReklamLeft {
   from {
-    left: 0;
+    left: 1px;
     opacity: 0;
   }
   to {
-    left: 99.9%;
+    left: 99%;
     opacity: 0.5;
   }
 }
 
 @-webkit-keyframes headerReklamRight {
   from {
-    left: 100%;
+    left: 99%;
     opacity: 0;
   }
   to {
-    left: 0.1%;
+    left: 1%;
     opacity: 0.5;
   }
 }
 
 @keyframes headerReklamRight {
   from {
-    left: 100%;
+    left: 99%;
     opacity: 0;
   }
   to {
-    left: 0.1%;
+    left: 1%;
     opacity: 0.5;
   }
 }
@@ -232,13 +232,13 @@ header #headerReklam::before, header #headerReklam::after {
 @-webkit-keyframes mainCarouselWrite1 {
   from {
     font-size: 9.5em;
-    opacity: 0.1;
-    -webkit-transform: rotate(540deg);
-            transform: rotate(540deg);
+    opacity: 0;
+    -webkit-transform: rotate(900deg);
+            transform: rotate(900deg);
   }
   to {
     font-size: 2.5em;
-    opacity: 0.7;
+    opacity: 0.2;
     -webkit-transform: rotate(0);
             transform: rotate(0);
   }
@@ -247,13 +247,13 @@ header #headerReklam::before, header #headerReklam::after {
 @keyframes mainCarouselWrite1 {
   from {
     font-size: 9.5em;
-    opacity: 0.1;
-    -webkit-transform: rotate(540deg);
-            transform: rotate(540deg);
+    opacity: 0;
+    -webkit-transform: rotate(900deg);
+            transform: rotate(900deg);
   }
   to {
     font-size: 2.5em;
-    opacity: 0.7;
+    opacity: 0.2;
     -webkit-transform: rotate(0);
             transform: rotate(0);
   }
@@ -281,6 +281,60 @@ header #headerReklam::before, header #headerReklam::after {
   }
 }
 
+@media only screen and (max-width: 2000px) {
+  .carousel-item {
+    height: 480px !important;
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+  .carousel-item {
+    height: 440px !important;
+  }
+}
+
+@media only screen and (max-width: 1250px) {
+  .carousel-item {
+    height: 400px !important;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .carousel-item {
+    height: 360px !important;
+  }
+  .carousel-item h5 {
+    font-size: 1.5em !important;
+  }
+  .carousel-item p {
+    font-size: 1em !important;
+  }
+  .captionLover {
+    font-size: 1.5em !important;
+    left: 2% !important;
+    opacity: 0.2;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .carousel-item {
+    height: 330px !important;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .carousel-item {
+    height: 300px !important;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .carousel-item {
+    height: 280px !important;
+  }
+}
+
 header {
   text-align: center;
 }
@@ -288,7 +342,7 @@ header {
 header #headerReklam {
   background-color: #24609e;
   color: #e0e0e0;
-  width: 100%;
+  width: 99.99%;
   padding: 15px 0;
   font-family: "Comfortaa", cursive;
   position: relative;
@@ -301,7 +355,7 @@ header #headerReklam::before {
 }
 
 header #headerReklam::after {
-  right: 100%;
+  right: 99.99%;
   -webkit-animation-name: headerReklamRight;
           animation-name: headerReklamRight;
 }
@@ -372,6 +426,7 @@ header #headerNavbar {
 
 header #headerNavbar img {
   height: 60px;
+  width: 30%;
   margin-top: 15px;
 }
 
@@ -412,68 +467,87 @@ header #headerNavbar .nav-link .fa-search {
   margin-left: 5px;
 }
 
-.filmSlideGOT .carousel-inner {
-  height: 580px;
-  overflow: hidden;
-  margin: 0 auto;
-  position: relative;
-}
-
-.filmSlideGOT .carousel-inner .carousel-item {
-  height: 100%;
-  background-color: #161616;
-}
-
-.filmSlideGOT .carousel-inner .carousel-item .carousel-caption h1 {
-  font-size: 9.5em;
+#mainSlideGOT .captionLover {
+  position: absolute;
+  z-index: 1;
+  left: 40%;
+  color: #e0e0e0;
+  font-size: 1.5em !important;
+  font-family: "Cinzel", serif !important;
+  top: 10px !important;
   opacity: 0.3;
-  font-family: "Cinzel", serif;
+}
+
+#mainSlideGOT .carousel-item {
+  position: relative;
+  height: 500px;
+  overflow: hidden !important;
+  background-color: black;
+}
+
+#mainSlideGOT .carousel-item img {
+  top: 0;
+  left: 0;
+  opacity: 0.5;
+  width: auto;
+  height: 100%;
+}
+
+#mainSlideGOT .carousel-item h5 {
+  font-size: 3.5em;
+  font-family: "Abril Fatface", cursive;
   font-weight: bold;
-  -webkit-transform: rotate(540deg);
-  transform: rotate(540deg);
+  opacity: 0;
+  -webkit-transform: rotate(900deg);
+  transform: rotate(900deg);
   -webkit-animation-name: mainCarouselWrite1;
           animation-name: mainCarouselWrite1;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
   -webkit-animation-iteration-count: 1;
           animation-iteration-count: 1;
-  -webkit-animation-duration: 2.5s;
-          animation-duration: 2.5s;
 }
 
-.filmSlideGOT .carousel-inner .carousel-item .carousel-caption p {
-  font-size: 1.7em;
-  letter-spacing: -25px;
+#mainSlideGOT .carousel-item p {
+  font-size: 1.5em;
   font-family: "Comfortaa", cursive;
-  opacity: 0;
+  letter-spacing: -20px;
   -webkit-animation-name: mainCarouselWrite2;
           animation-name: mainCarouselWrite2;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
   -webkit-animation-iteration-count: 1;
           animation-iteration-count: 1;
-  -webkit-animation-delay: 2.2s;
-          animation-delay: 2.2s;
-  -webkit-animation-duration: 2.5s;
-          animation-duration: 2.5s;
+  -webkit-animation-delay: 1.8s;
+          animation-delay: 1.8s;
+  opacity: 0;
 }
 
-.filmSlideGOT .carousel-inner #crsIt3 {
-  width: 100%;
-  height: 1000px;
-  position: absolute;
-  top: -50px;
-  left: 0;
-  opacity: 0.5;
+#mainSlideGOT:hover a {
+  display: block;
 }
 
-.filmSlideGOT .carousel-inner img {
-  width: 100%;
-  height: 1000px;
-  position: absolute;
-  top: -200px;
-  left: 0;
-  opacity: 0.5;
+#mainSlideGOT a {
+  display: none;
+  width: 50px !important;
+  height: 50px !important;
+  top: 43%;
+  border-radius: 100% !important;
+  background-color: #2d2d30 !important;
+  opacity: 0.4 !important;
+  line-height: 55px !important;
+}
+
+#mainSlideGOT .carousel-control-prev {
+  left: 1%;
+}
+
+#mainSlideGOT .carousel-control-next {
+  right: 1%;
 }
 
 a {

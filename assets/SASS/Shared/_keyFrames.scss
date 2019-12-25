@@ -2,22 +2,22 @@
     // Reklam
     @keyframes headerReklamLeft {
         from {
-            left: 0;
+            left: 1px;
             opacity: 0;
             
         }
         to {
-            left: 99.9%;
+            left: 99%;
             opacity: 0.5;
         }
     }
     @keyframes headerReklamRight {
         from {
-            left: 100%;
+            left: 99%;
             opacity: 0;
         }
         to {
-            left: 0.1%;
+            left: 1%;
             opacity: 0.5;
         }
     }
@@ -25,12 +25,12 @@
     @keyframes mainCarouselWrite1{
         from{
             font-size: 9.5em;
-            opacity: 0.1;
-            transform: rotate(540deg);
+            opacity: 0;
+            transform: rotate(900deg);
         }
         to{
             font-size: 2.5em;
-            opacity: 0.7;
+            opacity: 0.2;
             transform: rotate(0);
         }
     }
