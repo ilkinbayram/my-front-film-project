@@ -63,6 +63,11 @@
     .activeNavItem{
         color: lighten($color: $light-color, $amount: 3) !important;
         border-radius: 4px;
-        padding: 0 5px;
+        padding: 0 10px;
         background-color: darken($color: $red-color, $amount: 2) !important;
+        box-shadow: lighten($color: $red-color, $amount: 20) inset 0.05px 0.05px 4px 0.05px  !important;
+        &:hover{
+            background-color: darken($color: $red-color, $amount: 15) !important;
+            transition: all 0.2s;
+        }
     }

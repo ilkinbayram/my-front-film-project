@@ -7,7 +7,7 @@
             
         }
         to {
-            left: 100%;
+            left: 99.9%;
             opacity: 0.5;
         }
     }
@@ -17,10 +17,31 @@
             opacity: 0;
         }
         to {
-            left: 0;
+            left: 0.1%;
             opacity: 0.5;
         }
     }
 ///////////////////////////////////////////////
-
+    @keyframes mainCarouselWrite1{
+        from{
+            font-size: 9.5em;
+            opacity: 0.1;
+            transform: rotate(540deg);
+        }
+        to{
+            font-size: 2.5em;
+            opacity: 0.7;
+            transform: rotate(0);
+        }
+    }
+    @keyframes mainCarouselWrite2{
+        from{
+            letter-spacing: -25px;
+            opacity: 0;
+        }
+        to{
+            letter-spacing: 3px;
+            opacity: 1;
+        }
+    }
    

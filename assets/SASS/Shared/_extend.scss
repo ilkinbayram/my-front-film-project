@@ -43,7 +43,7 @@
             transition: all 0.5s;
         }
         &:hover{
-            background-color: darken($color: $red-color, $amount: 4) !important;
+            background-color: darken($color: $red-color, $amount: 10) !important;
             &::before{
                 left: 200px;
                 transition: all 0.5s;
@@ -60,14 +60,19 @@
             z-index: 1;
             width: 100px;
             height: 100%;
-            transition: all 0.3s;
+            transition: all 0.4s;
+            right: 0;
+            width: 0;
         }
         &:hover{
             color: $dark-color !important;
-            transition: all 0.5s !important;
+            transition: all 0.7s !important;
             &::before{
-                left: 0;
-                transition: all 0.3s;
+                left: 0%;
+                right: initial;
+                
+                transition: all 0.4s !important;
+                width: 100%;
             }
             
         }
