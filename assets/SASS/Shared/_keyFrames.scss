@@ -44,4 +44,40 @@
             opacity: 1;
         }
     }
-   
+    @keyframes mainCaptionAll{
+        0%{opacity: 0.8; }
+        50%{opacity: 0.1; }
+        100%{opacity: 0.8; }
+    }
+    @keyframes playIconBefore{
+        from {
+            height: 50px;
+            width: 50px;
+            left: 0;
+            top: 0;
+            opacity: 1;
+        }
+        to {
+            height: 90px;
+            width: 90px;
+            left: -20px;
+            top: -20px;
+            opacity: 0;
+        }
+    }
+    @keyframes playIconAfter{
+        from {
+            height: 50px;
+            width: 50px;
+            left: 0;
+            top: 0;
+            opacity: 1;
+        }
+        to {
+            height: 90px;
+            width: 90px;
+            left: -20px;
+            top: -20px;
+            opacity: 0;
+        }
+    }

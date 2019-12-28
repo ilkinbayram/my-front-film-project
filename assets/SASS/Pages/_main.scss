@@ -1,18 +1,25 @@
 // Slide Regard Game Of Thrones
+    
     #mainSlideGOT{
+        box-shadow: lighten($color: $dark-color, $amount: 3) 2px 2px 6px 2px;
         .captionLover{
             position: absolute;
             z-index: 1;
-            left: 40%;
+            left: 38%;
             color: $light-color;
             font-size: $slide-Text-Simple !important;
+            font-weight: bold;
             font-family: $slide-title !important;
             top: 10px !important;
-            opacity: 0.3;
+            opacity: 0.8;
+            animation-name: mainCaptionAll;
+            animation-iteration-count: infinite;
+            animation-duration: 3s;
+            text-shadow: 2px 2px 5px black;
         }
         .carousel-item{
             position: relative;
-            height: 500px;
+            height: 600px;
             overflow: hidden !important;
             background-color: black;
             img{
@@ -67,3 +74,266 @@
             right: 1%;
         }
     }
+    .fixedStore{
+        position: fixed;
+        top: 345px;
+        border-top-left-radius: 10px;
+        right: 0;
+        width: 35px;
+        height: 35px;
+        background-color: lighten($color: $success-color, $amount: 10);
+        text-align: center;
+        z-index: 999;
+        transition: all 0.4s;
+        &:hover{
+            cursor: pointer;
+            a{
+                color: lighten($color: $success-color, $amount: 20) !important;
+                transition: all 0.3s;
+            }
+            background-color: darken($color: $success-color, $amount: 40);
+            transition: all 0.5s;
+        }
+        a{            
+            color: $hard-color !important;
+            font-size: 22px !important;
+            margin: 7px 0;
+            transition: all 0.4s;
+        }
+    }
+    .changePageToRegist{
+        width: 35px;
+        height: 35px;
+        background-color: $red-color;
+        text-align: center;
+        position: fixed;
+        top: 380px;
+        border-bottom-left-radius: 10px;
+        right: 0;
+        transition: 0.8s;
+        z-index: 999;
+        &:hover{
+            cursor: pointer;
+            a{
+                transform: rotate(720deg);
+                transition: all 3s;
+            }
+        }
+        a{            
+            color: $hard-color !important;
+            font-size: 22px !important;
+            margin: 7px 0;
+            transition: all 3s;
+        }
+    }
+    .cheangeContent{
+        width: 200px;
+        position: fixed;
+        top: 380px;
+        right: -200px;
+        transition: 0.8s;
+        z-index: 999;        
+        border-bottom-left-radius: 10px;
+        h5{
+            height: 35px;
+            margin: auto 0;
+            color: darken($color: $hard-color, $amount: 20);
+            background-color: $red-color;
+            font-family: $modern-writing;
+            font-weight: bold;
+            padding: 5px 0;
+            text-align: center;
+        }
+        #chooseFrom{
+            height: 35px;
+            background: darken($color: $hard-color, $amount: 20);
+            text-align: center;            
+            border-bottom-left-radius: 10px;
+            a{
+                width: 40%;
+                text-align: center;
+                padding: 4px 0;
+                height: 30px;
+                border: 2px solid darken($color: $dark-color, $amount: 10);
+                border-radius: 5px;
+                margin: 2px 5px;
+                background-color: darken($color: $dark-color, $amount: 10);
+                color: darken($color: $red-color, $amount: 10) !important;
+                transition: all 0.2s;
+                font-size: 20px;
+                &:hover{
+                    color: lighten($color: $red-color, $amount: 25) !important;
+                    transition: all 0.2s;
+                }
+            }
+        }
+    }
+// Why Section After Slide
+    .reasonWhy{
+        @extend %h4h5p;
+        .reasonWhyResponsive{
+            justify-content: center !important;
+        }
+        .card{
+            top: 0;
+            border: 0px solid white;
+            box-shadow: lighten($color: $dark-color, $amount: 70) 0.5px 0.5px 15px 4px;
+            border-radius: 10px;
+            justify-content: center !important;
+            position: relative;
+            transition: all 0.7s;
+            margin-bottom: 60px;
+            &:hover{
+                .borderAnimate{
+                    width: 90px !important;
+                    height: 90px !important;
+                    margin: 5px 5px !important;
+                    transition: all 0.2s;
+                }
+                top: -10px;
+                transition: all 0.7s;
+            }
+            h5{
+                margin-top: 15px;
+            }
+            .iconOfWhy{
+                height: 100px;
+                width: 100px;
+                border-radius: 100%;
+                position: relative;
+                margin: auto !important;
+                text-align: center;
+                .borderAnimate{
+                    width: 100px;
+                    height: 100px;
+                    border: 3px solid white;
+                    border-radius: 100%;
+                    position: absolute;
+                    top: 0;
+                    transition: all 0.2s;
+                }
+                i{
+                    line-height: 100px;
+                    font-size: 2.2rem;
+                }
+            }
+            .iconGallery{
+                background-color: lighten($color: $red-color, $amount: 30);
+            }
+            .iconWorld{
+                background-color: lighten($color: $warning-color, $amount: 15);
+            }
+            .iconSupport{
+                background-color: lighten($color: $success-color, $amount: 25);
+            }
+        }
+    }
+
+// About Us And Movie
+    .aboutAndIframe{
+        background: lighten($color: $light-color, $amount: 10);
+        padding: 60px 0;
+        .col-12{
+            width: 100% !important;
+        }
+    }
+    .aboutUs{
+        @extend %h4h5p;
+        box-shadow: 1px 1px 10px 1px lighten($color: $dark-color, $amount: 35);
+        padding: 40px 0;
+        border-top-right-radius: 180px !important;
+        border-bottom-right-radius: 180px !important;
+        background-color: lighten($color: $light-color, $amount: 10);
+        position: absolute;
+        top: 10%;
+        z-index: 100;
+        width: 104%;
+        h4{
+            padding-bottom: 10px;
+        }
+        .firstPinkSection{
+            font-family: $modern-writing;
+            .pinkFilms{
+                font-family: $menu-writing;
+                color: lighten($color: $red-color, $amount: 25);
+            }
+        }
+        .secondSuccessSection{
+            font-family: $modern-writing;
+            .successFilms{
+                font-family: $menu-writing;
+                color: lighten($color: $success-color, $amount: 7);
+            }
+        }
+    }
+    .col-lg-6 {
+        padding: 0 !important;
+    }
+    .iFrame{
+        position: relative;
+        z-index: 1;
+        background-color: $dark-color;
+        border-radius: 10px;
+        box-shadow: 1px 1px 5px 1px lighten($color: $dark-color, $amount: 20);
+        img{
+            opacity: 0.6;
+            border-radius: 10px;
+        }
+        .playIcon{
+            position: absolute;
+            top: 46%;
+            left: 47%;
+            background-color: $light-color;
+            width: 50px;
+            height: 50px;
+            border-radius: 100%;
+            line-height: 50px;
+            text-align: center;
+            color: darken($color: $warning-color, $amount: 10);
+            z-index: 0 !important;
+            &:hover{
+                cursor: pointer;
+                color: $warning-color;
+            }
+            .playIconAnimate1{
+                position: absolute;
+                top: -15px;
+                left: -15px;
+                background-color: $light-color;
+                width: 80px;
+                height: 80px;
+                border-radius: 100%;
+                opacity: 0.6;
+                z-index: -99;
+                animation-name: playIconBefore;
+                animation-iteration-count: infinite;
+                animation-duration: 1.5s;
+                animation-delay: 1s;
+            }
+            .playIconAnimate2{
+                position: absolute;
+                top: -15px;
+                left: -15px;
+                background-color: $light-color;
+                width: 80px;
+                height: 80px;
+                border-radius: 100%;
+                opacity: 0.6;
+                z-index: -99;
+                animation-name: playIconAfter;
+                animation-iteration-count: infinite;
+                animation-duration: 1.5s;
+                animation-delay: 1.5s;
+            }
+        }
+    }
+    // .iFrameAvengers{
+    //     position: absolute;
+    //     z-index: 1000;
+    //     top: 20%;
+    //     margin-left: 15%;
+    //     iframe{
+    //         width: 400%;
+    //         height: 500px;
+    //     }
+    // }

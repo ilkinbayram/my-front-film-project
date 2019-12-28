@@ -74,9 +74,9 @@
             <div class="row">
                 <div class="col-lg-6 col-md-6 col-6">
                     <a href="indexMain.html">
-                        <img src="./assets/Images/pageIcon/film_Site_Last_Main.png" title="Best Quality & Flowing Generation"
-                        alt="WEBSITE LOGO">
-                    </a>                    
+                        <img src="./assets/Images/pageIcon/film_Site_Last_Main.png"
+                            title="Best Quality & Flowing Generation" alt="WEBSITE LOGO">
+                    </a>
                 </div>
                 <div class="col-lg-6 col-md-6 col-6">
                     <nav class="navbar navbar-expand-lg navbar-dark">
@@ -94,17 +94,33 @@
                                         </p>
                                     </a>
                                 </li>
-                                <li class="nav-item dropdown">
+                                <li class="nav-item dropdown" id="filmsHeaderNavItem">
                                     <a class="nav-link" href="#" id="navbarDropdown" role="button"
                                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                         <p class="justTextIcon">
-                                            PAGES
+                                            FILMS
                                             <i class="fas fa-chevron-down"></i>
                                         </p>
                                     </a>
                                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <a class="dropdown-item" href="#">Action</a>
-                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <a class="dropdown-item" href="#">IMDB 4+</a>
+                                        <a class="dropdown-item" href="#">IMDB 6+</a>
+                                        <a class="dropdown-item" href="#">IMDB 8+</a>
+                                        <div class="dropright">
+                                            <a type="button" class="dropdown-item" id="toTheDropRight"
+                                                data-toggle="dropdown" aria-haspopup="true">
+                                                Languages
+                                                <span class="fas fa-chevron-right"></span>
+                                            </a>
+
+                                            <div class="dropdown-menu languageDropMenu" id="escapeLifeLanguageDropMenu">
+                                                <!-- Dropdown menu links -->
+                                                <a class="dropdown-item" href="#">Azerbaycan</a>
+                                                <a class="dropdown-item" href="#">Türk</a>
+                                                <a class="dropdown-item" href="#">English</a>
+                                                <a class="dropdown-item" href="#">Russian</a>
+                                            </div>
+                                        </div>
                                     </div>
                                 </li>
                                 <li class="nav-item dropdown">
@@ -116,8 +132,10 @@
                                         </p>
                                     </a>
                                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <a class="dropdown-item" href="#">Action</a>
-                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <a class="dropdown-item" href="#">Today</a>
+                                        <a class="dropdown-item" href="#">Sooner Films</a>
+                                        <a class="dropdown-item" href="#">Actors' Life</a>
+                                        <a class="dropdown-item" href="#">Top 10s</a>
                                     </div>
                                 </li>
                                 <li class="nav-item dropdown">
@@ -129,8 +147,10 @@
                                         </p>
                                     </a>
                                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <a class="dropdown-item" href="#">Action</a>
-                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <a class="dropdown-item" href="#">Your Choice</a>
+                                        <a class="dropdown-item" href="#">People's Request</a>
+                                        <a class="dropdown-item" href="#">Join to the Challenge</a>
+                                        <a class="dropdown-item" href="#">Opportunity</a>
                                     </div>
                                 </li>
                                 <li class="nav-item dropdown">
@@ -142,8 +162,9 @@
                                         </p>
                                     </a>
                                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <a class="dropdown-item" href="#">Action</a>
-                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <a class="dropdown-item" href="#">Cartoons</a>
+                                        <a class="dropdown-item" href="#">Animation Films</a>
+                                        <a class="dropdown-item" href="#">Kids Camp</a>
                                     </div>
                                 </li>
                                 <li class="nav-item">
@@ -154,9 +175,17 @@
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">
+                                    <a class="nav-link" href="#" id="searchIcon">
                                         <i class="fas fa-search"></i>
                                     </a>
+                                    <div class="dropdown-menu dropdown-menu-right" id="searchChangeIcon"
+                                        aria-labelledby="navbarDropdown">
+                                        <form id="searchFilmsOnNavbar">
+                                            <input class="dropdown-item" type="text" name="searchInput"
+                                                id="searchInput">
+                                            <a href="#" id="openedInputSearch" class="fas fa-search"></a>
+                                        </form>
+                                    </div>
                                 </li>
                             </ul>
                         </div>
@@ -165,85 +194,210 @@
             </div>
         </div>
     </header>
-
-
     <main>
-        <div id="mainSlideGOT" class="carousel slide" data-ride="carousel">
+        <div id="mainSlideGOT" class="carousel slide mb-5" data-ride="carousel">
             <div class="captionLover">
                 For Game Of Thrones Lover...
             </div>
             <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="./assets/Images/slide images/actors/game_Of_Thrones_Wallpaper.jpg" class="d-block w-100" alt="Game Of Thrones">
-                <div class="carousel-caption">
-                    <h5>Regard</h5>
-                    <p>For all memory...</p>
-                  </div>
-              </div>
-              <div class="carousel-item">
-                <img src="./assets/Images/slide images/actors/ned_Stark.jpeg" class="d-block w-100" alt="Ned Stark">
-                <div class="carousel-caption">
-                    <h5>Ned Stark</h5>
-                  </div>
-              </div>
-              <div class="carousel-item">
-                <img src="./assets/Images/slide images/actors/johnSnow.jpg" class="d-block w-100" alt="John Snow">
-                <div class="carousel-caption">
-                    <h5>John Snow</h5>
-                    <p>King In The North...</p>
-                  </div>
-              </div>
-              <div class="carousel-item">
-                <img src="./assets/Images/slide images/actors/hodor.jpeg" class="d-block w-100" alt="Hodor">
-                <div class="carousel-caption">
-                    <h5>Hodor</h5>
-                    <p>Hold the door...</p>
-                  </div>
-              </div>
-              <div class="carousel-item">
-                <img src="./assets/Images/slide images/actors/white_Walkers.jpg" class="d-block w-100" alt="White Walkers">
-                <div class="carousel-caption">
-                    <h5>White Walkers</h5>
-                    <p>Blue eyes...</p>
-                  </div>
-              </div>
-              <div class="carousel-item">
-                <img src="./assets/Images/slide images/actors/baratheonGirl.jpg" class="d-block w-100" alt="Firing">
-                <div class="carousel-caption">
-                    <h5>the daughter of</h5>
-                    <p>Baratheon</p>
-                  </div>
-              </div>
-              <div class="carousel-item">
-                <img src="./assets/Images/slide images/actors/aryaStark.jpg" class="d-block w-100" alt="Arya Stark">
-                <div class="carousel-caption">
-                    <h5>Arya Stark</h5>
-                    <p>Valar Morghulis., Valar Doharaes...</p>
-                  </div>
-              </div>
-              <div class="carousel-item">
-                <img src="./assets/Images/slide images/actors/sadiklar.jpg" class="d-block w-100" alt="Game Of Thrones">
-                <div class="carousel-caption">
-                    <h5>Invincibles</h5>
-                  </div>
-              </div>
-              <div class="carousel-item">
-                <img src="./assets/Images/slide images/actors/tyrion.jpg" class="d-block w-100" alt="Tyrion">
-                <div class="carousel-caption">
-                    <h5>Tyrion</h5>
-                    <p>Lannister</p>
-                  </div>
-              </div>
+                <div class="carousel-item active">
+                    <img src="./assets/Images/slide images/actors/game_Of_Thrones_Wallpaper.jpg" class="d-block w-100"
+                        alt="Game Of Thrones">
+                    <div class="carousel-caption">
+                        <h5>Regard</h5>
+                        <p>For all memory...</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/Images/slide images/actors/Ned_Stark.jpg" class="d-block w-100" alt="Ned Stark">
+                    <div class="carousel-caption">
+                        <h5>Ned Stark</h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/Images/slide images/actors/johnSnow.jpg" class="d-block w-100" alt="John Snow">
+                    <div class="carousel-caption">
+                        <h5>John Snow</h5>
+                        <p>King In The North...</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/Images/slide images/actors/hodor.jpeg" class="d-block w-100" alt="Hodor">
+                    <div class="carousel-caption">
+                        <h5>Hodor</h5>
+                        <p>Hold the door...</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/Images/slide images/actors/white_Walkers.jpg" class="d-block w-100"
+                        alt="White Walkers">
+                    <div class="carousel-caption">
+                        <h5>White Walkers</h5>
+                        <p>Blue eyes...</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/Images/slide images/actors/baratheon.jpg" class="d-block w-100" alt="Firing">
+                    <div class="carousel-caption">
+                        <h5>Stannis</h5>
+                        <p>Baratheon</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/Images/slide images/actors/aryaStark.jpg" class="d-block w-100" alt="Arya Stark">
+                    <div class="carousel-caption">
+                        <h5>Arya Stark</h5>
+                        <p>Valar Morghulis., Valar Doharaes...</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/Images/slide images/actors/sadiklar.jpg" class="d-block w-100"
+                        alt="Game Of Thrones">
+                    <div class="carousel-caption">
+                        <h5>Invincibles</h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/Images/slide images/actors/tyrion.jpg" class="d-block w-100" alt="Tyrion">
+                    <div class="carousel-caption">
+                        <h5>Tyrion</h5>
+                        <p>Lannister</p>
+                    </div>
+                </div>
             </div>
             <a class="carousel-control-prev" href="#mainSlideGOT" role="button" data-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="sr-only">Previous</span>
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
             </a>
             <a class="carousel-control-next" href="#mainSlideGOT" role="button" data-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="sr-only">Next</span>
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
             </a>
-          </div>
+        </div>
+        <div class="fixedStore">
+            <a href="#" class="fas fa-cart-plus"></a>
+        </div>
+        <div class="changePageToRegist">
+            <a href="#" class="fas fa-cog"></a>
+        </div>
+        <div class="cheangeContent">
+            <h5>Which Page</h5>
+            <div id="chooseFrom">
+                <a href="#" class="fas fa-home" id="holdingPage" title="Go To Home Page"></a>
+                <a href="#" class="fas fa-ticket-alt" id="registrationPage" title="Buy Ticket"></a>
+            </div>
+        </div>
+        <div class="reasonWhy">
+            <div class="container col-12">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="whyChoose text-center align-center mt-4 mb-5">
+                            <h4>Why Choose This Site</h4>
+                            <p>
+                                Lorem ipsum dolor sit amet. Lorem, ipsum dolor. Lorem, ipsum.
+                                <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit.
+                                Lorem ipsum dolor sit.
+                                <br> Lorem ipsum dolor sit amet.
+                            </p>
+                        </div>
+                        <div class="container col-12">
+                            <div class="row reasonWhyResponsive">
+                                <div class="card mt-3 mx-3 col-8 col-sm-8 col-md-8 col-lg-3">
+                                    <div class="card-body text-center">
+                                        <div class="iconOfWhy iconGallery m-2 mb-3">
+                                            <i class="fas fa-photo-video"></i>
+                                            <div class="borderAnimate">
+
+                                            </div>
+                                        </div>
+                                        <h5 class="card-title">Integrated Gallery</h5>
+                                        <p class="card-text">This is a longer card with supporting text below as a
+                                            natural lead-in to additional content. This content is a little bit longer.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="card mt-3 mx-3 col-8 col-sm-8 col-md-8 col-lg-3">
+                                    <div class="card-body text-center">
+                                        <div class="iconOfWhy iconWorld m-2 mb-3">
+                                            <i class="fas fa-globe"></i>
+                                            <div class="borderAnimate">
+
+                                            </div>
+                                        </div>
+                                        <h5 class="card-title">World Popularity</h5>
+                                        <p class="card-text">This is a longer card with supporting text below as a
+                                            natural lead-in to additional content. This content is a little bit longer.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="card mt-3 mx-3 col-8 col-sm-8 col-md-8 col-lg-3">
+                                    <div class="card-body text-center">
+                                        <div class="iconOfWhy iconSupport m-2 mb-3">
+                                            <i class="fas fa-handshake"></i>
+                                            <div class="borderAnimate">
+
+                                            </div>
+                                        </div>
+                                        <h5 class="card-title">Simple Joinable</h5>
+                                        <p class="card-text">This is a longer card with supporting text below as a
+                                            natural lead-in to additional content. This content is a little bit longer.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="aboutAndIframe">
+            <div class="container col-12">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+                        <div class="aboutUs px-5">
+                            <h4>
+                                About Us
+                            </h4>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur.
+                                Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur.
+                                Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur.
+                                <br>
+                                Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur.
+                                Lorem ipsum dolor sit amet consectetur.
+                            </p>
+                            <div class="row mt-3">
+                                <h5 class="firstPinkSection col-3">
+                                    <div class="pinkFilms ">386</div>
+                                    <div class="aboutUsExplain h5">Free Watch</div>
+                                </h5>
+                                <h5 class="secondSuccessSection col-3">
+                                    <div class="successFilms">128</div>
+                                    <div class="aboutUsExplain h5">Paid Watch</div>
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+                        <div class="iFrame">
+                            <img src="./assets/Images/movieHeader/Avengers.jpg" style="width: 100%;" alt="Avengers">
+                            <span class="playIcon">
+                                <span class="playIconAnimate1"></span>
+                                <span class="playIconAnimate2"></span>
+                                <i class="fas fa-play"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="iFrameAvengers">
+            <iframe src="https://www.youtube.com/embed/O8jFBEGeaRw"
+                frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div> -->
     </main>
     <footer></footer>
 
@@ -258,7 +412,9 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
     </script>
+    <script src="./assets/JS/extraJs/dinamicPage.js"></script>
     <script src="./assets/JS/appMain.js"></script>
+        
 </body>
 
 </html>

@@ -71,3 +71,14 @@
             transition: all 0.2s;
         }
     }
+    .displayToggle{
+        display: block !important;
+    }
+    .fixedTopSticky{
+        top: 0 !important;
+        position: fixed !important;
+        z-index: 999;
+    }
+    .fa-times{
+        font-size: 1.3em;
+    }

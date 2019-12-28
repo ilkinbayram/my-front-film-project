@@ -3,6 +3,7 @@ $vine-color: #630017;
 $red-color: #ce001e;
 $light-color: #e0e0e0;
 $dark-color: #2d2d30;
+$open-dark-color: lighten($color: $dark-color, $amount: 20);
 $hard-color: #161616;
 $success-color: #24fd35;
 $warning-color: #ffbd03;
@@ -17,8 +18,11 @@ $modern-writing: 'Comfortaa', cursive;
 $menu-writing: 'Righteous', cursive;
 
 // Font Sizes
-$slide-Header-Simple: 3.5em;
-$slide-Header-Responsive: 1.5em;
-$slide-Text-Simple: 1.5em;
-$slide-Text-Responsive: 1em;
+$slide-Header-Simple: 3.5rem;
+$slide-Header-Responsive: 1.5rem;
+$slide-Text-Simple: 1.5rem;
+$slide-Text-Responsive: 1rem;
+$caption-Text-Title: 2.3rem;
+$caption-Text-Subtitle: 1.8rem;
+$caption-Text-Content: 1.2rem;
 

@@ -1,51 +1,116 @@
 // Header
 
 // Main
-@media only screen and (max-width: 2000px){
-    .carousel-item{
-        height: 480px !important;
+@media only screen and (max-width: 2000px) {
+    .carousel-item {
+        height: 600px !important;
     }
 }
-@media only screen and (max-width: 1400px){
-    .carousel-item{
+
+@media only screen and (max-width: 1400px) {
+    .carousel-item {
         height: 440px !important;
     }
 }
-@media only screen and (max-width: 1250px){
-    .carousel-item{
+
+@media only screen and (max-width: 1250px) {
+    .carousel-item {
         height: 400px !important;
     }
 }
-@media only screen and (max-width: 1100px){
-    .carousel-item{
+
+@media only screen and (max-width: 1100px) {
+    .carousel-item {
         height: 360px !important;
-        h5{
+
+        h5 {
             font-size: $slide-Header-Responsive !important;
         }
-        p{
+
+        p {
             font-size: $slide-Text-Responsive !important;
         }
     }
-    .captionLover{
+
+    .captionLover {
         font-size: $slide-Header-Responsive !important;
         left: 2% !important;
         opacity: 0.2;
         text-align: center;
     }
 }
-@media only screen and (max-width: 950px){
-    .carousel-item{
+
+@media only screen and (max-width: 991px) {
+    .carousel-item {
         height: 330px !important;
     }
+
+    .fa-chevron-right {
+        transform: rotate(90deg);
+    }
 }
-@media only screen and (max-width: 800px){
-    .carousel-item{
+
+@media only screen and (max-width: 800px) {
+    .carousel-item {
         height: 300px !important;
     }
 }
-@media only screen and (max-width: 650px){
-    .carousel-item{
+
+@media only screen and (max-width: 650px) {
+    .carousel-item {
         height: 280px !important;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .nav-item {
+        #searchChangeIcon {
+            #openedInputSearch {
+                margin-top: 28px !important;
+            }
+        }
+    }
+    .aboutAndIframe{
+        background: lighten($color: $light-color, $amount: 10);
+        padding: 10px 0 !important;
+        .col-12{
+            width: 100% !important;
+        }
+    }
+    .aboutUs{
+        box-shadow: 1px 1px 10px 1px lighten($color: $dark-color, $amount: 35);
+        padding: 40px 0;
+        border-top-right-radius: 100px !important;
+        border-bottom-right-radius: 180px !important;
+        background-color: lighten($color: $light-color, $amount: 10);
+        position: relative !important;
+        width: 100%;
+        margin-bottom: 20%;
+    }
+    .iFrame{
+        margin-top: 10px !important;
+        position: relative !important;
+        z-index: 1 !important;
+        background-color: $dark-color;
+        border-radius: 10px;
+    }
+}
+
+@media only screen and (max-width: 562px) {
+    .carousel-item {
+        height: 280px !important;
+    }
+
+    .fixedStore {
+        top: 400px !important;
+    }
+
+    .changePageToRegist {
+        top: 435px !important;
+    }
+
+    .cheangeContent {
+        top: 435px !important;
     }
 }
 

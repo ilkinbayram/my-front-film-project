@@ -77,3 +77,20 @@
             
         }
     }
+    %h4h5p{
+        h4{
+            font-size: $caption-Text-Title;
+            font-family: $main-title;
+            color: $dark-color;
+        }
+        p{
+            font-size: $caption-Text-Content;
+            font-family: $text-line;
+            color: $open-dark-color;
+        }
+        h5{
+            font-size: $caption-Text-Subtitle;
+            font-family: $main-title;
+            color: $dark-color;
+        }
+    }
