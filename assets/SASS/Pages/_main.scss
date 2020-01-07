@@ -111,7 +111,7 @@
         border-bottom-left-radius: 10px;
         right: 0;
         transition: 0.8s;
-        z-index: 999;
+        z-index: 1110;
         &:hover{
             cursor: pointer;
             a{
@@ -132,7 +132,7 @@
         top: 380px;
         right: -200px;
         transition: 0.8s;
-        z-index: 999;        
+        z-index: 1110;;        
         border-bottom-left-radius: 10px;
         h5{
             height: 35px;
@@ -188,7 +188,12 @@
                     width: 90px !important;
                     height: 90px !important;
                     margin: 5px 5px !important;
+                    opacity: 1 !important;
                     transition: all 0.2s;
+                    animation-name: hoverRotateWhySection;
+                    animation-iteration-count: infinite;
+                    animation-duration: 10s;
+                    animation-timing-function: linear;
                 }
                 top: -10px;
                 transition: all 0.7s;
@@ -206,7 +211,8 @@
                 .borderAnimate{
                     width: 100px;
                     height: 100px;
-                    border: 3px solid white;
+                    border: 3px dotted white;
+                    opacity: 0;
                     border-radius: 100%;
                     position: absolute;
                     top: 0;
@@ -232,7 +238,8 @@
 // About Us And Movie
     .aboutAndIframe{
         background: lighten($color: $light-color, $amount: 10);
-        padding: 60px 0;
+        padding: 100px 0;
+        height: 100%;
         .col-12{
             width: 100% !important;
         }
@@ -240,12 +247,13 @@
     .aboutUs{
         @extend %h4h5p;
         box-shadow: 1px 1px 10px 1px lighten($color: $dark-color, $amount: 35);
+        margin: 70px 0;
         padding: 40px 0;
         border-top-right-radius: 180px !important;
         border-bottom-right-radius: 180px !important;
         background-color: lighten($color: $light-color, $amount: 10);
-        position: absolute;
-        top: 10%;
+        position: relative;
+        // top: 10%;
         z-index: 100;
         width: 104%;
         h4{
@@ -275,9 +283,12 @@
         background-color: $dark-color;
         border-radius: 10px;
         box-shadow: 1px 1px 5px 1px lighten($color: $dark-color, $amount: 20);
+        height: 100% !important;
+        overflow: hidden !important;
         img{
             opacity: 0.6;
             border-radius: 10px;
+            height: 100%;
         }
         .playIcon{
             position: absolute;
@@ -289,11 +300,11 @@
             border-radius: 100%;
             line-height: 50px;
             text-align: center;
-            color: darken($color: $warning-color, $amount: 10);
+            color: darken($color: $warning-color, $amount: 10) !important;
             z-index: 0 !important;
             &:hover{
                 cursor: pointer;
-                color: $warning-color;
+                color: $warning-color !important;
             }
             .playIconAnimate1{
                 position: absolute;
@@ -327,13 +338,55 @@
             }
         }
     }
-    // .iFrameAvengers{
-    //     position: absolute;
-    //     z-index: 1000;
-    //     top: 20%;
-    //     margin-left: 15%;
-    //     iframe{
-    //         width: 400%;
-    //         height: 500px;
-    //     }
-    // }
+    .iFrameAvengers{
+        .dinamicIframe{
+            position: fixed;
+            width: 80%;
+            height: 80%;
+            z-index: 2000;
+            top: 10%;
+            left: 10%;
+        }
+        .closeIframe{
+            width: 40px !important;
+            height: 40px !important;
+            border-radius: 100%;
+            text-align: center;
+            line-height: 45px;
+            z-index: 1000;
+            position: fixed;
+            top: -8%;
+            left: 49%;
+            transition: all 0.5s;
+            &:hover{
+                background-color: darken($color: black, $amount: 50) !important;
+                i{
+                    color: lighten($color: $warning-color, $amount: 10);
+                }
+                
+            }
+            i{
+                color: white;
+                font-weight: bold;
+                font-size: 35px;
+            }
+        }
+        
+    }
+    #sponsorOwl{
+        justify-content: center !important;
+        background-color: lighten($color: $light-color, $amount: 50);
+        padding: 40px 8%;
+        @extend %h4h5p;
+        .owl-carousel{
+            text-align: center;
+            margin-top: 20px;
+            .item{
+                img{
+                    width: 150px;
+                    height: 150px;
+                }
+            }
+        }
+    }
+    

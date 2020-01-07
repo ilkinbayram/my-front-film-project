@@ -190,3 +190,64 @@ header {
         }
     }
 }
+// Sign In Style
+    .signInModal{
+        position: fixed;
+        z-index: 1111;
+        box-shadow: darken($color: $dark-color, $amount: 50) 0.5px 0.5px 20px 0.5px, inset lighten($color: $dark-color, $amount: 30) 1px 1px 10px 0.5px;;
+        border-radius: 10px;
+        background-color: lighten($color: $dark-color, $amount: 0);
+        padding: 20px;
+        color: lighten($color: $dark-color, $amount: 50);
+        width: 25%;
+        left: 37.5%;
+        top: -500px;
+        transition: all 0.1s linear;
+        #closeEntrance{
+            position: absolute;
+            right: 25px;
+            top: 25px;
+            font-size: 20px;
+            color: lighten($color: $dark-color, $amount: 60);
+            text-shadow: lighten($color: black, $amount: 4) 1px 1px 5px;
+            transition: all 0.1s linear;
+            &:hover{
+                color: $red-color;
+                cursor: pointer;
+                right: 22.5px;
+                top: 20px;
+                font-size: 25px;
+                text-shadow: black 2px 2px 10px;
+                transform: rotate(90deg);
+                transition: all 0.2s linear;
+            }
+            &:active{
+                font-size: 20px;
+                right: 25px;
+                top: 25px;
+            }
+        }
+        h4{
+            font-family: $menu-writing;
+            color: lighten($color: $red-color, $amount: 20);
+            text-shadow: black 1px 1px 3px;
+            margin-bottom: 30px;
+        }
+        h6{
+            font-family: $modern-writing;
+        }
+        .alertDivChecking{
+            color: $red-color;
+            font-family: $modern-writing;
+            font-size: 0.8rem;
+            font-weight: bold;
+        }
+        .userEntranceForm{
+            input{
+                box-shadow: lighten($color: $dark-color, $amount: 50) 0.5px 0.5px 5px 0.1px;
+                &:hover{
+                    box-shadow: lighten($color: $dark-color, $amount: 35) 0.5px 0.5px 10px 0.1px; 
+                }
+            }
+        }
+    }

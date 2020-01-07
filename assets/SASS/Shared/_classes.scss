@@ -82,3 +82,21 @@
     .fa-times{
         font-size: 1.3em;
     }
+    .iframeDinamicClass{
+        &:hover{
+            .closeIframe{
+                top: 3%;
+                transition: all 0.5s;
+            }
+        }
+    }
+    .coverOfMovie{
+            width: 100%;
+            height: 100%;
+            background-color: black;
+            opacity: 0.96;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 999;
+    }

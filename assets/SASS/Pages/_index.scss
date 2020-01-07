@@ -7,4 +7,14 @@ a{
 }
 body{
     background-color: lighten($color: $light-color, $amount: 5) !important;
+    &:hover{
+        .closeIframe{
+            top: 3%;
+            transition: all 0.5s;
+        }
+    }
+
+    #insteadBod{
+        opacity: 0;
+    }
 }

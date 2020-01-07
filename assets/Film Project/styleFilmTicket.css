@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css?family=Abril+Fatface|Arapey:400,400i|Cinzel:400,700,900|Comfortaa:300,400,500,600,700&display=swap&subset=latin-ext");
+@import url("https://fonts.googleapis.com/css?family=Righteous&display=swap");
+body {
+  background-color: #e0e0e0;
+}
+
+.insteadOfBody {
+  width: 100%;
+  height: 100%;
+}
+
+.insteadOfBody a {
+  text-decoration: none;
+}
+
+.insteadOfBody #acceptSatis {
+  color: #0dc0dc;
+  font-family: "Comfortaa", cursive;
+}
+
+.insteadOfBody #tenDolars div:hover {
+  opacity: 0.7;
+}
+
+.insteadOfBody #twentyDolars div:hover {
+  opacity: 0.7;
+}
+
+.headerOfTicket {
+  font-family: "Righteous", cursive;
+  color: #2d2d30;
+}
+
+.films {
+  padding: 20px 0;
+}
+
+.films .filmsImage {
+  width: 100%;
+  text-align: center !important;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  opacity: 0.6;
+  font-family: "Comfortaa", cursive;
+}
+
+.films .filmsImage:hover {
+  opacity: 1;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.films .filmsImage img {
+  width: 50%;
+  height: 280px;
+  border-radius: 20px;
+}
+
+.films .filmsImage h6 {
+  margin: 10px 0;
+}
+/*# sourceMappingURL=styleFilmTicket.css.map */

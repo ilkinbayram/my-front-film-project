@@ -1,0 +1,73 @@
+.input-group-prepend{
+    width: 40px !important;
+}
+.input-group-append{
+    width: 40px !important;
+}
+.input-group-text{
+    width: 100% !important;
+}
+.input-group{
+    margin-top: 10px !important;
+}
+input{
+    background: #FBF8F5 !important;
+}
+caption{
+    display: table-caption;
+}
+.card-header{
+    font-weight: bold;
+}
+.full-screen{
+    width: 100%;
+    /* height: 100%; */
+    /* position: fixed; */
+}
+.hoverDiv{
+    width: 170px !important;
+}
+.filterBtn{
+    font-weight: bold;
+}
+tr td img{
+    width: 100px;
+    height: 100px;
+}
+tr td{
+    vertical-align: middle !important;
+}
+.bckColAllDelete{
+    background: #B40A1B !important;
+    color: white !important;
+    font-weight: bold !important;
+}
+.bckColAllDelete:hover{
+    background: #343a40 !important;
+    color: #f8f9fa !important;
+}
+.btnPlay{
+    width: 55px;
+    transition: width 0.5s;
+}
+.btnPlay:hover{
+    width: 146px;
+}
+.input-group-text{
+    background: #007bff;
+    color: white;
+    font-weight: bold;
+}
+.searchGroup{
+    max-width: 300px;
+}
+
+.searchIconText{
+    background: #343a40;
+    color: white;
+    font-weight: bold;
+}
+
+/* .unvisibleHeadTable{
+    display: none;
+} */

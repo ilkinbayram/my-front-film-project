@@ -1,0 +1,78 @@
+body{
+    width: 100%;
+    height: 100%;
+    background-image: url("http://cdn.miscellaneoushi.com/2560x1440/20121023/mountains%20hollywood%20paramount%202560x1440%20wallpaper_www.miscellaneoushi.com_75.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    z-index: -1;
+}
+.fullScreen:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: block;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: -1;
+  }
+.welcomeStart{
+    margin: auto;
+    margin-top: 10px;
+    color: white;
+    text-align: center;
+}
+.formPosition{
+    margin-top: 20px;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 10px;
+    color: white;
+    opacity: 0.4;
+    /* margin-right: auto !important; */
+    margin-left: 3%;
+    text-align: left;
+    transition: all 1s ease;
+}
+.formPosition:hover{
+    background-color: rgba(0, 0, 0, 0.9);
+    opacity: 1;
+}
+.emailIcon{
+    background: #4A586E;
+    color: white;
+    width: 42px;
+}
+select{
+    width: 31% !important;
+}
+.selectDiv{
+    display: flex;
+    justify-content: space-between;
+}
+html{
+    font-size: 0.95rem
+}
+#showPassword, #daySelect, #monthSelect, #yearSelect{
+    cursor: pointer;
+}
+.errorBorder{
+    /* border: 3px solid #FF0000; */
+    box-shadow: #FF0000 1px 1px 10px 1px ;
+    
+}
+.successBorder{
+    /* border: 3px solid #5BFF62; */
+    box-shadow: #5BFF62 1px 1px 10px 1px ;
+}
+.errorMessage{
+    font-size: 14px;
+    color: #FF0000;
+}
+.successMessage{
+    font-size: 14px;
+    color: #5BFF62;
+}

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Create New Account</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../Images/pageIcon/main_page_icon.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    <script src="https://kit.fontawesome.com/8d2a2067a9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="registrationStyle.css">
+</head>
+
+<body>
+    <div class="fullScreen">
+    </div>
+
+    <div class="container allElements">
+        <div class="row col-sm-12">
+            <h2 class="welcomeStart">Kayit Formuna Hos Geldiniz...</h2>
+        </div>
+        <div class="row col-12">
+            <div class="formPosition col-12">
+                <form id="submitForm">
+                    <div class="form-group">
+                        <h6 class="mt-2 ml-3">Isim & Soyisim</h6>
+                        <div class="col-sm-12">
+                            <div class="input-group">
+                                <input placeholder="Adiniz" type="text" id="formName" class="form-control">
+                                <input placeholder="Soyadiniz" type="text" id="formSurname" class="form-control">
+                            </div>
+                        </div>
+                        <h6 class="mt-2 ml-3">Dogum Tarihi</h6>
+                        <div class="col-12 selectDiv">
+
+                            <select class="form-control d-inline" name="day" id="daySelect">
+                                <option value="#">Day</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                                <option value="13">13</option>
+                                <option value="14">14</option>
+                                <option value="15">15</option>
+                                <option value="16">16</option>
+                                <option value="17">17</option>
+                                <option value="18">18</option>
+                                <option value="19">19</option>
+                                <option value="20">20</option>
+                                <option value="21">21</option>
+                                <option value="22">22</option>
+                                <option value="23">23</option>
+                                <option value="24">24</option>
+                                <option value="25">25</option>
+                                <option value="26">26</option>
+                                <option value="27">27</option>
+                                <option value="28">28</option>
+                                <option value="29">29</option>
+                                <option value="30">30</option>
+                                <option value="31">31</option>
+                            </select>
+                            <select class="form-control ml-2 d-inline" name="month" id="monthSelect">
+                                <option value="#">Month</option>
+                                <option value="Yanvar">Yanvar</option>
+                                <option value="Fevral">Fevral</option>
+                                <option value="Mart">Mart</option>
+                                <option value="Aprel">Aprel</option>
+                                <option value="May">May</option>
+                                <option value="Iyun">Iyun</option>
+                                <option value="Iyul">Iyul</option>
+                                <option value="Avqust">Avqust</option>
+                                <option value="Sentyabr">Sentyabr</option>
+                                <option value="Oktyabr">Oktyabr</option>
+                                <option value="Noyabr">Noyabr</option>
+                                <option value="Dekabr">Dekabr</option>
+                            </select>
+                            <select class="form-control ml-2 d-inline" name="year" id="yearSelect">
+                                <option value="#">Year</option>
+                                <option value="2008">2008</option>
+                                <option value="2007">2007</option>
+                                <option value="2006">2006</option>
+                                <option value="2005">2005</option>
+                                <option value="2004">2004</option>
+                                <option value="2003">2003</option>
+                                <option value="2002">2002</option>
+                                <option value="2001">2001</option>
+                                <option value="2000">2000</option>
+                                <option value="1999">1999</option>
+                                <option value="1998">1998</option>
+                                <option value="1997">1997</option>
+                                <option value="1996">1996</option>
+                                <option value="1995">1995</option>
+                                <option value="1994">1994</option>
+                                <option value="1993">1993</option>
+                                <option value="1992">1992</option>
+                                <option value="1991">1991</option>
+                                <option value="1990">1990</option>
+                                <option value="1989">1989</option>
+                                <option value="1988">1988</option>
+                                <option value="1987">1987</option>
+                                <option value="1986">1986</option>
+                                <option value="1985">1985</option>
+                                <option value="1984">1984</option>
+                            </select>
+                        </div>
+                        <hr class="text-white">
+                        <h6 class="ml-3 mt-2">Email</h4>
+                            <div class="col-12 forEmailError">
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text emailIcon">@</span>
+                                    </div>
+                                    <input class="form-control" placeholder="email@example.com" type="text"
+                                        name="emailForm" id="emailForm">
+                                </div>
+                            </div>
+                            <h6 class="ml-3 mt-2">Kullanici adi</h4>
+                                <div class="col-12">
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text emailIcon"><i
+                                                    class="fas fa-user-plus"></i></span>
+                                        </div>
+                                        <input class="form-control" placeholder="example_123" type="text"
+                                            name="usernameForm" id="usernameForm">
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="col-12">
+                                    <h6 class="mt-2">Yeni Bir Sifre Olusturun</h6>
+                                    <small>(Sifreler en az 8 karakter icermeli ve ilk karakter buyuk harf
+                                        icermelidir.)</small>
+                                </div>
+
+                                <div class="col-12">
+                                    <div class="forPasswordError">
+                                        <div class="sifreyeGore">
+                                            <div class="input-group">
+                                                <input class="form-control" placeholder="Sifre Girin" type="password"
+                                                    name="passwordForm" id="passwordForm">
+                                                <input class="form-control" placeholder="Sifreyi Tekrar Girin"
+                                                    type="password" name="passwordAgain" id="passwordAgain">
+                                            </div>
+                                            <span id="showPassword"><i class="far fa-eye"></i> Sifreyi Goster</span>
+                                        </div>
+
+                                    </div>
+
+                                    <!-- <i class="fas fa-eye-slash"></i> -->
+
+                                </div>
+                                <hr>
+                                <h6 class="ml-3 mt-2">Ulkeniz & Doguldunuz Sehir</h6>
+                                <div class="input-group col-12">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text emailIcon"><i
+                                                class="fas fa-map-marker-alt"></i></span>
+                                    </div>
+                                    <input class="form-control" placeholder="Hangi Ulkedensiniz" type="text"
+                                        name="country" id="formCountry">
+                                    <input class="form-control" placeholder="Hangi Sehirdensiniz" type="text"
+                                        name="city" id="formCity">
+                                </div>
+                                <h6 class="ml-3 mt-2">Adresiniz <span class="optinalCreate">(Istege bagli)</span></h6>
+                                <div class="col-12">
+                                    <textarea class="form-control" name="formAdress" id="formAdress" cols="40"
+                                        rows="1"></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <div class="custom-control custom-checkbox my-1 mr-sm-2">
+                                        <input type="checkbox" class="custom-control-input" id="customControlInline">
+                                        <label class="custom-control-label" for="customControlInline">
+                                            <a href="termsConditions.html" target="_blank">Sartlarimiza detayli bicimde
+                                                bakabilirsiniz</a>
+                                            <br>
+                                            Sartlari okudum ve tumunu kabul ediyorum.
+                                        </label>
+                                    </div>
+                                </div>
+                    </div>
+                    <div class="col-12">
+
+                        <button type="submit" id="acceptBtn" class="btn btn-block btn-outline-primary mb-3"
+                            disabled="true">Devam et</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="createStorage.js"></script>
+    <script src="createObjects.js"></script>
+    <script src="createProject.js"></script>
+</body>
+
+</html>

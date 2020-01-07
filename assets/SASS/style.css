@@ -21,8 +21,8 @@ header #headerReklam::before, header #headerReklam::after {
   color: #bababa !important;
   position: relative;
   overflow: hidden;
-  -webkit-box-shadow: #111111 1px 1px 1px 0.1px !important;
-          box-shadow: #111111 1px 1px 1px 0.1px !important;
+  -webkit-box-shadow: #111111 1px 1px 10px 0.1px !important;
+          box-shadow: #111111 1px 1px 10px 0.1px !important;
 }
 
 .signInBtn:hover, .signUpBtn:hover {
@@ -87,19 +87,19 @@ header #headerReklam::before, header #headerReklam::after {
   width: 100%;
 }
 
-.reasonWhy h4, .aboutUs h4 {
+.reasonWhy h4, .aboutUs h4, #sponsorOwl h4 {
   font-size: 2.3rem;
   font-family: "Abril Fatface", cursive;
   color: #2d2d30;
 }
 
-.reasonWhy p, .aboutUs p {
+.reasonWhy p, .aboutUs p, #sponsorOwl p {
   font-size: 1.2rem;
   font-family: "Arapey", serif;
   color: #5e5e65;
 }
 
-.reasonWhy h5, .aboutUs h5 {
+.reasonWhy h5, .aboutUs h5, #sponsorOwl h5 {
   font-size: 1.8rem;
   font-family: "Abril Fatface", cursive;
   color: #2d2d30;
@@ -215,6 +215,23 @@ header #headerReklam::before, header #headerReklam::after {
 
 .fa-times {
   font-size: 1.3em;
+}
+
+.iframeDinamicClass:hover .closeIframe {
+  top: 3%;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.coverOfMovie {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.96;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
 }
 
 @-webkit-keyframes headerReklamLeft {
@@ -371,6 +388,28 @@ header #headerReklam::before, header #headerReklam::after {
   }
 }
 
+@-webkit-keyframes hoverRotateWhySection {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes hoverRotateWhySection {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
 @-webkit-keyframes playIconAfter {
   from {
     height: 50px;
@@ -409,17 +448,29 @@ header #headerReklam::before, header #headerReklam::after {
   .carousel-item {
     height: 600px !important;
   }
+  .signInModal {
+    width: 25%;
+    left: 37.5%;
+  }
 }
 
 @media only screen and (max-width: 1400px) {
   .carousel-item {
     height: 440px !important;
   }
+  .signInModal {
+    width: 30% !important;
+    left: 35% !important;
+  }
 }
 
 @media only screen and (max-width: 1250px) {
   .carousel-item {
     height: 400px !important;
+  }
+  .signInModal {
+    width: 35% !important;
+    left: 32.5% !important;
   }
 }
 
@@ -449,11 +500,19 @@ header #headerReklam::before, header #headerReklam::after {
     -webkit-transform: rotate(90deg);
             transform: rotate(90deg);
   }
+  .signInModal {
+    width: 40% !important;
+    left: 30% !important;
+  }
 }
 
 @media only screen and (max-width: 800px) {
   .carousel-item {
     height: 300px !important;
+  }
+  .signInModal {
+    width: 52% !important;
+    left: 24% !important;
   }
 }
 
@@ -483,7 +542,7 @@ header #headerReklam::before, header #headerReklam::after {
     background-color: #fafafa;
     position: relative !important;
     width: 100%;
-    margin-bottom: 20%;
+    margin-bottom: 10%;
   }
   .iFrame {
     margin-top: 10px !important;
@@ -491,6 +550,7 @@ header #headerReklam::before, header #headerReklam::after {
     z-index: 1 !important;
     background-color: #2d2d30;
     border-radius: 10px;
+    margin: 20px 0;
   }
 }
 
@@ -506,6 +566,10 @@ header #headerReklam::before, header #headerReklam::after {
   }
   .cheangeContent {
     top: 435px !important;
+  }
+  .signInModal {
+    width: 65% !important;
+    left: 17.5% !important;
   }
 }
 
@@ -707,6 +771,80 @@ header #headerNavbar .nav-link .i {
   margin-left: 5px;
 }
 
+.signInModal {
+  position: fixed;
+  z-index: 1111;
+  -webkit-box-shadow: black 0.5px 0.5px 20px 0.5px, inset #77777f 1px 1px 10px 0.5px;
+          box-shadow: black 0.5px 0.5px 20px 0.5px, inset #77777f 1px 1px 10px 0.5px;
+  border-radius: 10px;
+  background-color: #2d2d30;
+  padding: 20px;
+  color: #ababb1;
+  width: 25%;
+  left: 37.5%;
+  top: -500px;
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+}
+
+.signInModal #closeEntrance {
+  position: absolute;
+  right: 25px;
+  top: 25px;
+  font-size: 20px;
+  color: #c6c6c9;
+  text-shadow: #0a0a0a 1px 1px 5px;
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+}
+
+.signInModal #closeEntrance:hover {
+  color: #ce001e;
+  cursor: pointer;
+  right: 22.5px;
+  top: 20px;
+  font-size: 25px;
+  text-shadow: black 2px 2px 10px;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.signInModal #closeEntrance:active {
+  font-size: 20px;
+  right: 25px;
+  top: 25px;
+}
+
+.signInModal h4 {
+  font-family: "Righteous", cursive;
+  color: #ff3552;
+  text-shadow: black 1px 1px 3px;
+  margin-bottom: 30px;
+}
+
+.signInModal h6 {
+  font-family: "Comfortaa", cursive;
+}
+
+.signInModal .alertDivChecking {
+  color: #ce001e;
+  font-family: "Comfortaa", cursive;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.signInModal .userEntranceForm input {
+  -webkit-box-shadow: #ababb1 0.5px 0.5px 5px 0.1px;
+          box-shadow: #ababb1 0.5px 0.5px 5px 0.1px;
+}
+
+.signInModal .userEntranceForm input:hover {
+  -webkit-box-shadow: #84848c 0.5px 0.5px 10px 0.1px;
+          box-shadow: #84848c 0.5px 0.5px 10px 0.1px;
+}
+
 #mainSlideGOT {
   -webkit-box-shadow: #343438 2px 2px 6px 2px;
           box-shadow: #343438 2px 2px 6px 2px;
@@ -849,7 +987,7 @@ header #headerNavbar .nav-link .i {
   right: 0;
   -webkit-transition: 0.8s;
   transition: 0.8s;
-  z-index: 999;
+  z-index: 1110;
 }
 
 .changePageToRegist:hover {
@@ -878,7 +1016,7 @@ header #headerNavbar .nav-link .i {
   right: -200px;
   -webkit-transition: 0.8s;
   transition: 0.8s;
-  z-index: 999;
+  z-index: 1110;
   border-bottom-left-radius: 10px;
 }
 
@@ -952,8 +1090,17 @@ header #headerNavbar .nav-link .i {
   width: 90px !important;
   height: 90px !important;
   margin: 5px 5px !important;
+  opacity: 1 !important;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
+  -webkit-animation-name: hoverRotateWhySection;
+          animation-name: hoverRotateWhySection;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
 }
 
 .reasonWhy .card h5 {
@@ -972,7 +1119,8 @@ header #headerNavbar .nav-link .i {
 .reasonWhy .card .iconOfWhy .borderAnimate {
   width: 100px;
   height: 100px;
-  border: 3px solid white;
+  border: 3px dotted white;
+  opacity: 0;
   border-radius: 100%;
   position: absolute;
   top: 0;
@@ -999,7 +1147,8 @@ header #headerNavbar .nav-link .i {
 
 .aboutAndIframe {
   background: #fafafa;
-  padding: 60px 0;
+  padding: 100px 0;
+  height: 100%;
 }
 
 .aboutAndIframe .col-12 {
@@ -1009,12 +1158,12 @@ header #headerNavbar .nav-link .i {
 .aboutUs {
   -webkit-box-shadow: 1px 1px 10px 1px #84848c;
           box-shadow: 1px 1px 10px 1px #84848c;
+  margin: 70px 0;
   padding: 40px 0;
   border-top-right-radius: 180px !important;
   border-bottom-right-radius: 180px !important;
   background-color: #fafafa;
-  position: absolute;
-  top: 10%;
+  position: relative;
   z-index: 100;
   width: 104%;
 }
@@ -1052,11 +1201,14 @@ header #headerNavbar .nav-link .i {
   border-radius: 10px;
   -webkit-box-shadow: 1px 1px 5px 1px #5e5e65;
           box-shadow: 1px 1px 5px 1px #5e5e65;
+  height: 100% !important;
+  overflow: hidden !important;
 }
 
 .iFrame img {
   opacity: 0.6;
   border-radius: 10px;
+  height: 100%;
 }
 
 .iFrame .playIcon {
@@ -1069,13 +1221,13 @@ header #headerNavbar .nav-link .i {
   border-radius: 100%;
   line-height: 50px;
   text-align: center;
-  color: #cf9900;
+  color: #cf9900 !important;
   z-index: 0 !important;
 }
 
 .iFrame .playIcon:hover {
   cursor: pointer;
-  color: #ffbd03;
+  color: #ffbd03 !important;
 }
 
 .iFrame .playIcon .playIconAnimate1 {
@@ -1118,6 +1270,61 @@ header #headerNavbar .nav-link .i {
           animation-delay: 1.5s;
 }
 
+.iFrameAvengers .dinamicIframe {
+  position: fixed;
+  width: 80%;
+  height: 80%;
+  z-index: 2000;
+  top: 10%;
+  left: 10%;
+}
+
+.iFrameAvengers .closeIframe {
+  width: 40px !important;
+  height: 40px !important;
+  border-radius: 100%;
+  text-align: center;
+  line-height: 45px;
+  z-index: 1000;
+  position: fixed;
+  top: -8%;
+  left: 49%;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.iFrameAvengers .closeIframe:hover {
+  background-color: black !important;
+}
+
+.iFrameAvengers .closeIframe:hover i {
+  color: #ffca36;
+}
+
+.iFrameAvengers .closeIframe i {
+  color: white;
+  font-weight: bold;
+  font-size: 35px;
+}
+
+#sponsorOwl {
+  -webkit-box-pack: center !important;
+      -ms-flex-pack: center !important;
+          justify-content: center !important;
+  background-color: white;
+  padding: 40px 8%;
+}
+
+#sponsorOwl .owl-carousel {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#sponsorOwl .owl-carousel .item img {
+  width: 150px;
+  height: 150px;
+}
+
 a {
   color: #e0e0e0 !important;
 }
@@ -1128,5 +1335,15 @@ a:hover {
 
 body {
   background-color: #ededed !important;
+}
+
+body:hover .closeIframe {
+  top: 3%;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+body #insteadBod {
+  opacity: 0;
 }
 /*# sourceMappingURL=style.css.map */

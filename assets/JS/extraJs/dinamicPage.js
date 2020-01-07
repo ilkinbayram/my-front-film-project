@@ -1,11 +1,6 @@
 // Delete Reklam
 class DinamicPage{
-    static delReklam(anyDelReklam){
-        anyDelReklam.click(function(){
-            $("#headerReklam").remove();
-        })
-    }
-    static configureTicket(configBtn,content,fixed){
+    static configureTicket(configBtn,content){
         configBtn.click(function(e){
             e.preventDefault();
             if(configBtn.css("right") === "0px"){
@@ -18,6 +13,7 @@ class DinamicPage{
                     "right":"0px",
                     "transition":"all 0.8s"
                 })
+                
             }
             else{
                 configBtn.css({
@@ -43,7 +39,7 @@ class DinamicPage{
             iconItem.toggle(1000);
         })
     }
-    static async countFilms(freeFilms,paidFilms){
+    static countFilms(freeFilms,paidFilms){
         let countFree = Number(freeFilms.textContent);
         let countPaid = Number(paidFilms.textContent);
         
@@ -54,7 +50,7 @@ class DinamicPage{
          function hesablaFree(i) { 
            setTimeout(function() { 
                freeFilms.innerText = i; 
-           }, 10 * i); 
+           }, 1000/countFree * i); 
          }
 
          for(let j = 1; j<= countPaid; j++){
@@ -64,7 +60,7 @@ class DinamicPage{
          function hesablaPaid(j){
              setTimeout(function(){
                 paidFilms.innerText = j;
-             },10*j)
+             },1000/countPaid* j)
          }
         
     }

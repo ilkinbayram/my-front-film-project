@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Film Project</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../Images/pageIcon/main_page_icon.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    <script src="https://kit.fontawesome.com/8d2a2067a9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="filmStyle.css">
+</head>
+
+<body>
+    <div class="homePage">
+        <a href="../../indexMain.html" class="btn btn-success btn-block">GO TO HOME PAGE</a>
+    </div>
+    <section class="full-screen">
+        <div class="container col-md-12 col-sm-12">
+            <div class="card row">
+                <div class="card-header text-center bg-primary text-light">FuLL HD Film IzLe</div>
+                <div class="card-body firstCardBody">
+                    <form id="filmForm">
+                        <div class="row valueControl1">
+                            <div class="input-group col-md-3 col-sm-12">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"><i class="fas fa-film"></i></span>
+                                </div>
+                                <input type="text" name="filmName" id="filmName" class="form-control"
+                                    placeholder="Film ismi girin">
+                            </div>
+                            <div class="input-group col-md-3 col-sm-12">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"><i class="far fa-file-video"></i></span>
+                                </div>
+                                <input placeholder="Filmin yonetmeni" type="text" name="filmDirector" id="filmDirector"
+                                    class="form-control">
+                            </div>
+                            <div class="input-group col-md-3 col-sm-12">
+                                <input placeholder="Film URL'si" type="text" name="filmUrl" id="filmUrl"
+                                    class="form-control">
+                                <div class="input-group-append">
+                                    <span class="input-group-text"><i class="fas fa-paperclip"></i></span>
+                                </div>
+                            </div>
+                            <div class="input-group col-md-3 col-sm-12">
+                                <input placeholder="Video URL'si" type="text" name="videoUrl" id="videoUrl"
+                                    class="form-control">
+                                <div class="input-group-append">
+                                    <span class="input-group-text"><i class="fas fa-link"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="valueControl2">
+                            <div class="custom-control custom-radio custom-control-inline mt-3">
+                                <input type="radio" id="typeAction" name="typeOfFilm" class="custom-control-input"
+                                    value="action">
+                                <label class="custom-control-label" for="typeAction">Aksiyon Filmi</label>
+                            </div>
+                            <div class="custom-control custom-radio custom-control-inline mt-3">
+                                <input type="radio" id="typeDram" name="typeOfFilm" class="custom-control-input"
+                                    value="dram">
+                                <label class="custom-control-label" for="typeDram">Dram Filmi</label>
+                            </div>
+                            <div class="custom-control custom-radio custom-control-inline mt-3">
+                                <input type="radio" id="typeOther" name="typeOfFilm" class="custom-control-input"
+                                    value="other">
+                                <label class="custom-control-label" for="typeOther">Diger Film Tipi</label>
+                            </div>
+                        </div>
+
+                        <button type="submit" id="filmInputBtn" class="mt-3 btn btn-outline-success btn-block">Filmi
+                            Ekle</button>
+                    </form>
+                </div>
+                <div class="card-body secondCardBody">
+
+                    <div class="card-header bg-dark text-white text-center">Filmler</div>
+                    <table class="table table-hover table-dark">
+                        <thead>
+                            <tr class="headRow unvisibleHeadTable">
+                                <th scope="col">
+                                    <div class="input-group searchGroup">
+                                        <input class="form-control" placeholder="Filmi arayin" type="text"
+                                            name="searchPlace" id="searchFilm">
+                                        <div class="input-group-append searchIconDiv">
+                                            <span class="input-group-text searchIconText"><i
+                                                    class="fas fa-search"></i></span>
+                                        </div>
+                                    </div>
+                                </th>
+                                <th scope="col">Film</th>
+                                <th scope="col">Yonetmen</th>
+                                <th scope="col" class="hoverDiv">
+                                    <!-- <div class="dropdown">
+                                        <button class="btn btn-dark btn-border border-secondary dropdown-toggle"
+                                            type="button" id="filmMenu" data-toggle="dropdown" aria-haspopup="true"
+                                            aria-expanded="false">
+                                            Filmleri Filtrele
+                                        </button>
+                                        <div class="dropdown-menu bg-secondary" id="filmTypeFilter"
+                                            aria-labelledby="filmMenu">
+                                            <button class="dropdown-item filterBtn" type="button">All</button>
+                                            <button class="dropdown-item filterBtn" type="button">Aksiyon</button>
+                                            <button class="dropdown-item filterBtn" type="button">Dram</button>
+                                            <button class="dropdown-item filterBtn" type="button">Diger</button>
+                                        </div>
+                                    </div> -->
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody id="forAddTBody">
+                            <!-- <tr>
+                                <td><img src="" alt="resim bulunamadi"></td>
+                                <td>Fast & Furious</td>
+                                <td>Dawid Hickenberg</td>
+                                <td><a href="" target="_blank" class="btnPlay btn btn-danger"><i class="iconPlay far fa-play-circle"></i></a></td>
+                            </tr> -->
+                        </tbody>
+                    </table>
+                    <button class="btn btn-outline-dark btn-block bckColAllDelete">Tum Film Listesini
+                        Temizleyin</button>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+
+    <script src="film.js"></script>
+    <script src="storage.js"></script>
+    <script src="interfeys.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
