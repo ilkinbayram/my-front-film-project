@@ -28,6 +28,15 @@ $(document).ready(function () {
 
 
     // Owl Carousel
+    var owl = $('.owl-carousel');
+        owl.owlCarousel({
+        items:4,
+        loop:true,
+        margin:10,
+        autoplay:true,
+        autoplayTimeout:1000,
+        autoplayHoverPause:true
+    });
     $('.owl-carousel').owlCarousel({
         loop: true,
         margin: 10,
@@ -85,6 +94,7 @@ $(document).ready(function () {
     
     // When the page is scrolling
         window.onscroll = function () {
+
             myFunction(limitTop)
             if ($("html").scrollTop() > 1111 && $("html").scrollTop() < 1181) {
 
@@ -99,6 +109,10 @@ $(document).ready(function () {
         };
         // When Mobile Touch
         $("body").mousedown(function (e) {
+            limitTop = document.getElementById("headerNavbar").offsetTop;
+            // return limitTop;
+        })
+        $("body").mousemove(function (e) {
             limitTop = document.getElementById("headerNavbar").offsetTop;
             // return limitTop;
         })

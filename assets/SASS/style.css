@@ -16,7 +16,7 @@ header #headerReklam::before, header #headerReklam::after {
           animation-iteration-count: infinite;
 }
 
-.signInBtn, .signUpBtn {
+.signInBtn, .signUpBtn, .filmFooter .subscribe .form-group .btnSubscribe {
   margin: 5px 0;
   color: #bababa !important;
   position: relative;
@@ -25,7 +25,7 @@ header #headerReklam::before, header #headerReklam::after {
           box-shadow: #111111 1px 1px 10px 0.1px !important;
 }
 
-.signInBtn:hover, .signUpBtn:hover {
+.signInBtn:hover, .signUpBtn:hover, .filmFooter .subscribe .form-group .btnSubscribe:hover {
   -webkit-box-shadow: -0.4px -0.4px 5px 0.3px grey !important;
           box-shadow: -0.4px -0.4px 5px 0.3px grey !important;
   color: white !important;
@@ -845,9 +845,179 @@ header #headerNavbar .nav-link .i {
           box-shadow: #84848c 0.5px 0.5px 10px 0.1px;
 }
 
-#mainSlideGOT {
-  -webkit-box-shadow: #343438 2px 2px 6px 2px;
-          box-shadow: #343438 2px 2px 6px 2px;
+.filmFooter {
+  background-color: #212123;
+  padding: 100px 0;
+  color: #fafafa;
+}
+
+.filmFooter .navAndIcon {
+  font-size: 0.95em;
+}
+
+.filmFooter .navAndIcon div {
+  margin-bottom: 15px;
+}
+
+.filmFooter .navAndIcon .footerContactEmail a {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.filmFooter .navAndIcon .footerContactEmail a:hover {
+  color: #ffbd03 !important;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.filmFooter .navAndIcon .holdingIcon {
+  width: 80%;
+  height: 100px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.filmFooter .navAndIcon .holdingIcon img {
+  width: 100%;
+  height: 100%;
+}
+
+.filmFooter .navAndIcon .iconFooterNav {
+  margin-right: 7px;
+}
+
+.filmFooter .navAndIcon .fa-map-marker-alt {
+  margin-left: 3px;
+}
+
+.filmFooter .navAndIcon .fa-mobile-alt {
+  margin-left: 5px;
+}
+
+.filmFooter .useful h4 {
+  margin-top: 50px;
+  margin-bottom: 40px;
+}
+
+.filmFooter .useful .linksFooter {
+  margin-bottom: 10px;
+}
+
+.filmFooter .useful .linksFooter a {
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.filmFooter .useful .linksFooter a:hover {
+  color: #ffbd03 !important;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  margin-left: 5px;
+}
+
+.filmFooter .recent h4 {
+  margin-top: 50px;
+  margin-bottom: 40px;
+}
+
+.filmFooter .recent .col-3 {
+  padding: 0 !important;
+}
+
+.filmFooter .recent .img20 {
+  width: 10%;
+  height: 10%;
+}
+
+.filmFooter .recent .img20 img {
+  width: 60px;
+  height: 60px;
+  margin-top: 6px;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.filmFooter .recent .textPart80 {
+  width: 80%;
+  height: 80%;
+  font-size: 14px;
+}
+
+.filmFooter .recent .textPart80 a {
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.filmFooter .recent .textPart80 a:hover {
+  color: #ffbd03 !important;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.filmFooter .recent .textPart80 .dateTime {
+  margin-top: 10px;
+  font-size: 90%;
+  color: #878787;
+}
+
+.filmFooter .subscribe p {
+  font-size: 0.95em;
+}
+
+.filmFooter .subscribe .form-group {
+  position: relative;
+}
+
+.filmFooter .subscribe .form-group input {
+  height: 50px;
+  width: 100%;
+}
+
+.filmFooter .subscribe .form-group .btnSubscribe {
+  width: 80px;
+  padding-left: 6px !important;
+  -webkit-box-shadow: unset !important;
+          box-shadow: unset !important;
+  position: absolute;
+  top: 1px;
+  right: 5px;
+}
+
+.filmFooter .subscribe .form-group .btnSubscribe:hover {
+  -webkit-box-shadow: unset !important;
+          box-shadow: unset !important;
+}
+
+.filmFooter .subscribe .subscribeHeader {
+  margin-top: 50px;
+  margin-bottom: 40px;
+}
+
+.termsFooter {
+  background-color: #0d0d0e;
+  color: white;
+  font-family: "Comfortaa", cursive;
+}
+
+.termsFooter p {
+  margin: 20px 0;
+}
+
+.termsFooter .navTermAndPolicy {
+  margin: 20px 0;
+}
+
+.termsFooter a {
+  color: #fafafa !important;
+  padding: 0 10px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.termsFooter a:hover {
+  color: #ffbd03 !important;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 #mainSlideGOT .captionLover {
@@ -1311,8 +1481,9 @@ header #headerNavbar .nav-link .i {
   -webkit-box-pack: center !important;
       -ms-flex-pack: center !important;
           justify-content: center !important;
+  text-align: center;
   background-color: white;
-  padding: 40px 8%;
+  padding: 40px 10%;
 }
 
 #sponsorOwl .owl-carousel {
@@ -1335,6 +1506,7 @@ a:hover {
 
 body {
   background-color: #ededed !important;
+  width: 100% !important;
 }
 
 body:hover .closeIframe {

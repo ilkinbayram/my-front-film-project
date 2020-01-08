@@ -1,0 +1,154 @@
+// Main Footer
+.filmFooter{
+    background-color: darken($color: $dark-color, $amount: 5);
+    padding: 100px 0;
+    color: lighten($color: $light-color, $amount: 10);
+
+    // First Icon
+    .navAndIcon{
+        font-size: 0.95em;
+        div{
+            margin-bottom: 15px;
+        }
+        .footerContactEmail{
+            a{
+                transition: all 0.3s;
+                &:hover{
+                    color: $warning-color !important;
+                    transition: all 0.3s;
+                }
+            }
+        }
+        .holdingIcon{
+            width: 80%;
+            height: 100px;
+            text-align: center;
+            margin-bottom: 20px;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .iconFooterNav{
+            margin-right: 7px;
+
+        }
+        .fa-map-marker-alt{
+            margin-left: 3px;
+        }
+        .fa-mobile-alt{
+            margin-left: 5px;
+        }
+    }
+
+    // Secon Useful
+    .useful{
+        h4{
+            margin-top: 50px;
+            margin-bottom: 40px;
+        }
+        .linksFooter{
+            margin-bottom: 10px;
+            a{
+                transition: all 0.4s;
+                &:hover{
+                    color: $warning-color !important;
+                    transition: all 0.4s;
+                    margin-left: 5px;
+                }
+            }
+        }
+    }
+
+    // Recent
+    .recent{
+        h4{
+            margin-top: 50px;
+            margin-bottom: 40px;
+        }
+        .col-3{
+            padding: 0 !important;
+        }
+        .img20{
+            width: 10%;
+            height: 10%;
+            img{
+                width: 60px;
+                height: 60px;
+                margin-top: 6px;
+                margin-left: 0;
+                padding-left: 0;
+            }
+        }
+        .textPart80{
+            width: 80%;
+            height: 80%;
+            font-size: 14px;
+            a{
+                transition: all 0.4s;
+                &:hover{
+                    color: $warning-color !important;
+                    transition: all 0.4s;
+                }
+            }
+            .dateTime{
+                margin-top: 10px;
+                font-size: 90%;
+                color: darken($color: $light-color, $amount: 35);
+            }
+        }
+    }
+
+    // Subscribe
+    .subscribe{
+        p{
+            font-size: 0.95em;
+        }
+        .form-group{
+            position: relative;
+            input{
+                height: 50px;
+                width: 100%;
+            }
+            .btnSubscribe{
+                width: 80px;
+                padding-left: 6px !important;
+                @extend %signBtns;
+                box-shadow: unset !important;
+                position: absolute;
+                top: 1px;
+                right: 5px;
+                &:hover{
+                    box-shadow: unset !important;
+                }
+            }
+        }
+        
+        .subscribeHeader{
+            margin-top: 50px;
+            margin-bottom: 40px;
+        }
+    }
+}
+
+// Terms And Condition Part
+.termsFooter{
+    background-color: darken($color: $dark-color, $amount: 13);
+    color: lighten($color: $light-color, $amount: 50);
+    font-family: $modern-writing;
+    p{
+        margin: 20px 0;
+    }
+    .navTermAndPolicy{
+        margin: 20px 0;
+    }
+    a{
+        color: lighten($color: $light-color, $amount: 10) !important;
+        padding: 0 10px;
+        transition: all 0.3s;
+        &:hover{
+            color: $warning-color !important;
+            transition: all 0.3s;
+        }
+    }
+}
